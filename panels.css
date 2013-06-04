@@ -1,0 +1,65 @@
+div.panels {
+	position: relative;
+}
+
+ul.panel-container {
+	position: relative;
+	list-style: none;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+	ul.panel-container li.panel {
+		display: block;
+
+		height: 100%;
+
+		background-color: red;
+
+		float: left;
+	}
+
+/* -------------------------------- *\
+               Handles
+\* -------------------------------- */
+ul.panel-handle-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	list-style: none;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+	ul.panel-handle-container li.panel-handle {
+		display: block;
+
+		background-color: transparent;
+	}
+
+		ul.panel-handle-container li.panel-handle.x {
+			width: 40px;
+			height: 100%;
+		}
+
+		ul.panel-handle-container li.panel-handle.x:hover {
+			cursor: ew-resize;
+		}
+
+		ul.panel-handle-container li.panel-handle.y {
+			height: 40px;
+			width: 100%;
+		}
+
+		ul.panel-handle-container li.panel-handle.y:hover {
+			cursor: ns-resize;
+		}

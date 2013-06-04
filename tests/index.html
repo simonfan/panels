@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Module boilerplate</title>
+	
+	<!-- Set a script tag to define unit as FALSE, so that the demo page is run -->
+	<script type="text/javascript">
+		window.__unit = false;
+		window.__demo = true;
+	</script>
+
+	<script type="text/javascript" data-main="main.js" src="components/requirejs/require.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../panels.css">
+
+	<!-- jquery-ui -->
+	<!-- core -->
+	<!--
+	<link rel="stylesheet" type="text/css" href="components/jquery-ui/themes/base/jquery.ui.core.css">
+-->
+
+
+
+	<style type="text/css">
+
+		body {
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+		}
+
+		#x-panels {
+			height: 1000px;
+			width: 100%;
+
+			background-color: #efefef;
+		}
+
+			#first {
+				background-color: #E6E6E6;
+			}
+
+			#second {
+				background-color: #272822;
+				color: #fff;
+			}
+
+			#third {
+				background-color: purple;
+			}
+
+			#fourth {
+				background-color: red;
+			}
+
+		#y-panels {
+			height: 500px;
+			width: 100%;
+
+			background-color: black;
+		}
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="x-panels">
+		<ul class="panel-container">
+			<li class="panel" id="first">
+				<div>This will become a text area</div>
+			</li>
+			<li class="panel" id="second">
+				<ul>
+					<li>This</li>
+					<li>will</li>
+					<li>become a list</li>
+				</ul>
+			</li>
+			<li class="panel" id="third"></li>
+		</ul>
+	</div>
+	
+	<br>
+	<a href="tests.html">Go to unit tests</a>
+	
+</body>
+
+</html>
